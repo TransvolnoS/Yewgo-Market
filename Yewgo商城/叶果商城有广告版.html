@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#div_search{
+				float: right;
+			}	
+			#navibar {
+				background-color: orange;
+				font-family: "微软雅黑";
+			}
+		
+		</style>
+		<script type="text/javascript" src="js/lunbotu.js">	
+		</script>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<script type="text/javascript">
+				$(function(){
+					$("#ad").css("display","none");
+					$("#ad").slideDown(1500,function(){
+						$("#ad").css("display","block");
+					})
+					$("#delad").click(function(){
+						$("#ad").css("display","none");
+						
+				
+					})
+				})
+			
+		</script>
+	</head>
+	<body>
+		<table  width="100%">
+			<!--第一行 导航栏-->
+			<tr>
+				<th>
+					<!--嵌套一个1行3列的table-->
+					<table style="padding-top: 0px;" width="100%">
+						<td><img width="200px" height="100px" src="img/微信图片_20181129154731.png"></td>
+						<td><img src="img/header.jpg"></td>
+						<td>
+							<a href="loading.html">注册</a>&nbsp;&nbsp;&nbsp;
+							<a href="#">登陆</a>&nbsp;&nbsp;&nbsp;
+							<a href="#">购物车</a>
+						</td> 
+					</table>
+				</th>
+			</tr>
+			
+			<tr>
+				<td>
+					<div id="ad">
+					<img id="delad" src="img/delete.jpg" width="10px" height="10px"style="float: right;"/>
+					<img id="ad001" src="img/ad_.jpg" width="100%" />
+					</div>
+				</td>
+			</tr>
+			<br/>
+			<!--第二行 菜单栏-->
+			<div class="container-fluid clearfix">
+			<nav class="navbar navbar-fixed-top clearfix">
+						<div class="container-fluid" id="navibar">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+								 aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<a class="navbar-brand" href="#">首页</a>
+							</div>
+			
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<!-- 	<table>
+									<td></td>
+								</table> -->
+								<ul class="nav navbar-nav">
+									<li><a href="#">电脑达人 <span class="sr-only">(current)</span></a></li>
+									<li><a href="#">手机数码</a></li>
+									<li><a href="#">耳机发烧 <span class="sr-only">(current)</span></a></li>
+									<li><a href="#">潮人推荐</a></li>
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">更多
+											<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">酷雅男装</a></li>
+											<li><a href="#">品味女装</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#">母婴用品</a></li>
+											<li><a href="#">海外好物</a></li>
+											<li role="separator" class="divider"></li>
+											<li><a href="#">精品海鲜</a></li>
+										</ul>
+									</li>
+								</ul>
+								<form class="navbar-form navbar-right">
+									<div class="form-group">
+										<input type="text" value="冬季修身打底" class="form-control" placeholder="search">
+									</div>
+									<button type="submit" class="btn btn-default">搜搜看</button>
+								</form>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
+					</div>
+			</div>
+			<!--第三行 图片-->
+			<tr>
+				<td>
+					
+					<img id="pic001" src="img/1.jpg" width="100%"/>
+				</td>
+			</tr>
+			
+			<!--第四行 产品信息-->
+			<tr>
+				<td>
+					<!--嵌套一个3行7列的表格-->
+					<table width="100%">
+						<tr align="center">
+							<td><h1>热门商品</h1></td>
+							<td colspan="6"><img src="img/title2.jpg"/></td>
+							
+						</tr>
+						
+						<tr align="center">
+							<td rowspan="2"><img src="img/big01.jpg"/></td>
+							<td colspan="3" ><img src="img/middle01.jpg"</td>
+							
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">手机提前购</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3"></font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+						
+						<tr align="center">
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							
+						</tr>
+					</table>
+				</td>
+			</tr>
+			
+			<!--第五行 图片-->
+			<tr >
+				<td><img width="100%" src="img/ad.jpg"/></td>
+			</tr>
+			
+			<!--第六行 商品信息-->
+			<tr>
+				<td>
+					<!--嵌套一个3行7列的表格-->
+					<table width="100%">
+						<tr align="center">
+							<td><h1>热门商品</h1></td>
+							<td colspan="6"><img src="img/title2.jpg"/></td>
+						</tr>
+						
+						<tr align="center">
+							<td rowspan="2"><img src="img/big01.jpg"/></td>
+							<td colspan="3" ><img src="img/middle01.jpg"</td>
+							
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+						
+						<tr align="center">
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							<td><img src="img/small08.jpg"/><p><font size="3">家电精选</font><br/><font color="red">$299</font></p></td>
+							
+						</tr>
+					</table>
+				</td>
+			</tr>
+			
+			<!--第七行 图片-->
+			<tr >
+				<td><img  width="100%" src="img/footer.jpg"/></td>
+			</tr>
+			
+			<!--第八行 9个链接-->
+			<tr>
+				<td align="center">
+					<a href="#">关于我们</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">联系我们</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">招贤纳士</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">法律声明</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">友情链接</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">支付方式</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">配送方式</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">服务声明</a>&nbsp;&nbsp;&nbsp;
+					<a href="#">广告声明</a>
+				</td>
+			</tr>
+			
+			<!--第九行 一句文字-->
+			<tr align="center">
+				<td>Copyright &copy; 2018-2019 叶果商城 版权所有</td>
+			</tr>
+		</table>
+	</body>
+</html>
